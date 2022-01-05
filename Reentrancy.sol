@@ -13,8 +13,8 @@ withdraw function.
 - Using a mutex. It would lock the contract during code execution 
 and thus prevent reentrant calls.
 
-Note that this code will throw an exception if compiled with 
-versions > 0.8.0 because of uint underflow.
+Note that, when performing the attack, this code will throw an 
+exception if compiled with versions > 0.8.0 because of underflows.
 */
 
 // users can deposit and withdraw eth in this contract
