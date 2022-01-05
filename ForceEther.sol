@@ -1,9 +1,12 @@
+// SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.10;
 
-// Here we are breaking a contract by taking advantage of the 
-// poor use of this.balance and sending eth to the contract.
-// A fix would be to use a state variable to keep track of the
-// amount of eth deposited instead of using this.balance
+/*
+Here we are breaking a contract by taking advantage of the 
+poor use of this.balance and sending eth to the contract.
+A fix would be to use a state variable to keep track of the
+amount of eth deposited instead of using this.balance
+*/
 
 // users can deposit 1 eth until a target amount is reached
 // the last user to deposit wins all the deposited eth

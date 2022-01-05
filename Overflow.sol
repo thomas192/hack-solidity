@@ -1,9 +1,13 @@
+// SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.6.6;
 
-// Here we are using uint overflow to bypass the lock time
-// of funds deposited in a contract.
+/*
+Here we are using uint overflow to bypass the lock time of funds 
+deposited in a contract. A fix would be to use SafeMath. Since 
+version 0.8.0 overflows throw errors.
+*/
 
-// eth deposited on this contract are locked for a period of time
+// eth deposited in this contract are locked for a period of time
 contract TimeLock {
     // amount of eth deposited by the user
     mapping(address => uint) public balances;
