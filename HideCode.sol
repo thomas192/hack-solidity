@@ -31,11 +31,11 @@ contract Bar {
     }
 }
 
-// This code is hidden in a separate file
+// this code is hidden in a separate file
 contract Mal {
     event Log(string message);
 
-    // We can execute the same exploit even if this function does not
+    // we can execute the same exploit even if this function does not
     // exist by using the fallback
     function log() public {
         emit Log("Mal was called");
