@@ -1,4 +1,5 @@
 This is a collection of interesting things related to writing secure Solidity code.
+
 "examples" folder contains detailed explanations about what is going on.
 
 Sources :
